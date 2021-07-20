@@ -4,7 +4,7 @@
   <visualProperties x="64" y="137">
     <element href="assembly.xml#StartHere"/>
   </visualProperties>
-  <visualProperties x="268" y="110">
+  <visualProperties x="216" y="210">
     <element href="assembly.xml#AsyncMediation"/>
   </visualProperties>
   <visualProperties x="618" y="167">
