@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+     xmlns="http://www.springframework.org/schema/beans"
+     xmlns:beans="http://www.springframework.org/schema/beans"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:cc="http://www.capeclear.com/assembly/10"
+     xmlns:cloud="urn:com.workday/esb/cloud/10.0"
+     xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:pi="urn:com.workday/picof"
+     xmlns:wd="urn:com.workday/bsvc"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 
+	<cc:assembly id="WorkdayAssembly" version="2016.34">
+        <cc:workday-in id="StartHere" routes-to="AsyncMediation">
+            <cc:integration-system name="MTableExample"/>
+        </cc:workday-in>
+        <cc:async-mediation id="AsyncMediation">
+            <cc:steps>
+                <cc:write id="Write">
+                    <cc:message>
+                        <cc:text>{&#xD;
+&quot;Report_Entry&quot;: [{&#xD;
+   &quot;Employee_ID&quot;: &quot;00000463&quot;,&#xD;
+   &quot;Name&quot;: &quot;Maccan&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00000481&quot;,&#xD;
+   &quot;Name&quot;: &quot;Cohan&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00000533&quot;,&#xD;
+   &quot;Name&quot;: &quot;Yankovich&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00000560&quot;,&#xD;
+   &quot;Name&quot;: &quot;Jurcevich&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00000614&quot;,&#xD;
+   &quot;Name&quot;: &quot;Musto&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00000716&quot;,&#xD;
+   &quot;Name&quot;: &quot;Amacher&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00000873&quot;,&#xD;
+   &quot;Name&quot;: &quot;Walker&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00000922&quot;,&#xD;
+   &quot;Name&quot;: &quot;Kelly&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00000944&quot;,&#xD;
+   &quot;Name&quot;: &quot;Warnock&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00001317&quot;,&#xD;
+   &quot;Name&quot;: &quot;Schaefer&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00001350&quot;,&#xD;
+   &quot;Name&quot;: &quot;High&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00001439&quot;,&#xD;
+   &quot;Name&quot;: &quot;Woll&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00001580&quot;,&#xD;
+   &quot;Name&quot;: &quot;Pawliger&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00001871&quot;,&#xD;
+   &quot;Name&quot;: &quot;Anitas&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00001925&quot;,&#xD;
+   &quot;Name&quot;: &quot;Fieldhouse&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00001946&quot;,&#xD;
+   &quot;Name&quot;: &quot;Hart&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00001957&quot;,&#xD;
+   &quot;Name&quot;: &quot;Farley&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002052&quot;,&#xD;
+   &quot;Name&quot;: &quot;Vedantam&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002311&quot;,&#xD;
+   &quot;Name&quot;: &quot;Gutch&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002476&quot;,&#xD;
+   &quot;Name&quot;: &quot;Farrell&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002485&quot;,&#xD;
+   &quot;Name&quot;: &quot;Steff&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002542&quot;,&#xD;
+   &quot;Name&quot;: &quot;Barley&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002557&quot;,&#xD;
+   &quot;Name&quot;: &quot;Duan&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002563&quot;,&#xD;
+   &quot;Name&quot;: &quot;Dasilva&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002658&quot;,&#xD;
+   &quot;Name&quot;: &quot;Park&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002687&quot;,&#xD;
+   &quot;Name&quot;: &quot;Fischer&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002744&quot;,&#xD;
+   &quot;Name&quot;: &quot;Dautermann&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002956&quot;,&#xD;
+   &quot;Name&quot;: &quot;Sheikh&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00002979&quot;,&#xD;
+   &quot;Name&quot;: &quot;Gomez&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003059&quot;,&#xD;
+   &quot;Name&quot;: &quot;Frendberg&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003181&quot;,&#xD;
+   &quot;Name&quot;: &quot;Shade&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003196&quot;,&#xD;
+   &quot;Name&quot;: &quot;Quindoy&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003209&quot;,&#xD;
+   &quot;Name&quot;: &quot;McNair&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003403&quot;,&#xD;
+   &quot;Name&quot;: &quot;O'Rear&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003653&quot;,&#xD;
+   &quot;Name&quot;: &quot;Quinones&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003658&quot;,&#xD;
+   &quot;Name&quot;: &quot;Tanemori&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003692&quot;,&#xD;
+   &quot;Name&quot;: &quot;Baudot-Mohageg&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003721&quot;,&#xD;
+   &quot;Name&quot;: &quot;Jiles Bell&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003729&quot;,&#xD;
+   &quot;Name&quot;: &quot;Dickson&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003772&quot;,&#xD;
+   &quot;Name&quot;: &quot;Grossman&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00003852&quot;,&#xD;
+   &quot;Name&quot;: &quot;Prajapati&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00004068&quot;,&#xD;
+   &quot;Name&quot;: &quot;Guzman&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00004072&quot;,&#xD;
+   &quot;Name&quot;: &quot;Rolfs&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00004127&quot;,&#xD;
+   &quot;Name&quot;: &quot;Khan&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00004164&quot;,&#xD;
+   &quot;Name&quot;: &quot;Vera&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00004190&quot;,&#xD;
+   &quot;Name&quot;: &quot;Lundblade&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00004206&quot;,&#xD;
+   &quot;Name&quot;: &quot;Makokha&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00004217&quot;,&#xD;
+   &quot;Name&quot;: &quot;Wadley&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00004250&quot;,&#xD;
+   &quot;Name&quot;: &quot;Bodmer&quot;&#xD;
+},&#xD;
+{&#xD;
+   &quot;Employee_ID&quot;: &quot;00004251&quot;,&#xD;
+   &quot;Name&quot;: &quot;Keefer&quot;&#xD;
+}]&#xD;
+}</cc:text>
+                    </cc:message>
+                </cc:write>
+                <cc:mtable-builder id="MtableBuilder" input="message">
+                    <cc:json-mtable-reader parse-target="Report_Entry"/>
+                </cc:mtable-builder>
+                <cc:log id="Log">
+                    <cc:log-message>
+                        <cc:text>@{mtable['mtable'].columns}&#xD;
+@{mtable.get('mtable').findFirst('Employee_ID', '00000873')[1]}</cc:text>
+                    </cc:log-message>
+                </cc:log>
+            </cc:steps>
+        </cc:async-mediation>
+	</cc:assembly>
+
+</beans>
