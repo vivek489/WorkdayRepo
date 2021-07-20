@@ -7,8 +7,15 @@
   <visualProperties x="268" y="110">
     <element href="assembly.xml#AsyncMediation"/>
   </visualProperties>
+  <visualProperties x="618" y="167">
+    <element href="assembly.xml#PutIntegrationMessage"/>
+  </visualProperties>
   <connections type="routesTo" sourceAnchorX="1.0" sourceAnchorY="0.7027027027027027" targetAnchorX="0.4796380090497738" targetAnchorY="0.5230769230769231">
     <source href="assembly.xml#StartHere"/>
     <target href="assembly.xml#AsyncMediation"/>
+  </connections>
+  <connections type="routesTo" sourceAnchorX="1.0" sourceAnchorY="0.23846153846153847" targetAnchorX="0.22439024390243903" targetAnchorY="0.24324324324324326">
+    <source href="assembly.xml#AsyncMediation"/>
+    <target href="assembly.xml#PutIntegrationMessage"/>
   </connections>
 </wdnm:Diagram>
