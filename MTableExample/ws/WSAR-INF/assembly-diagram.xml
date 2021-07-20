@@ -5,17 +5,17 @@
     <element href="assembly.xml#StartHere"/>
   </visualProperties>
   <visualProperties x="216" y="210">
-    <element href="assembly.xml#AsyncMediation"/>
+    <element href="assembly.xml#MtableExample"/>
   </visualProperties>
   <visualProperties x="618" y="167">
     <element href="assembly.xml#PutIntegrationMessage"/>
   </visualProperties>
   <connections type="routesTo" sourceAnchorX="1.0" sourceAnchorY="0.7027027027027027" targetAnchorX="0.4796380090497738" targetAnchorY="0.5230769230769231">
     <source href="assembly.xml#StartHere"/>
-    <target href="assembly.xml#AsyncMediation"/>
+    <target href="assembly.xml#MtableExample"/>
   </connections>
   <connections type="routesTo" sourceAnchorX="1.0" sourceAnchorY="0.23846153846153847" targetAnchorX="0.22439024390243903" targetAnchorY="0.24324324324324326">
-    <source href="assembly.xml#AsyncMediation"/>
+    <source href="assembly.xml#MtableExample"/>
     <target href="assembly.xml#PutIntegrationMessage"/>
   </connections>
 </wdnm:Diagram>

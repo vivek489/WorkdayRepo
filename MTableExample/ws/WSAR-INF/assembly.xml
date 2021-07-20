@@ -11,10 +11,10 @@
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  
 	<cc:assembly id="WorkdayAssembly" version="2016.34">
-        <cc:workday-in id="StartHere" routes-to="AsyncMediation">
+        <cc:workday-in id="StartHere" routes-to="MtableExample">
             <cc:integration-system name="MTableExample"/>
         </cc:workday-in>
-        <cc:async-mediation id="AsyncMediation" routes-to="PutIntegrationMessage">
+        <cc:async-mediation id="MtableExample" routes-to="PutIntegrationMessage">
             <cc:steps>
                 <cc:write id="Write">
                     <cc:message>
