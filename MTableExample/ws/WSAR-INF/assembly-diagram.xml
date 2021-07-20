@@ -18,4 +18,7 @@
     <source href="assembly.xml#AsyncMediation"/>
     <target href="assembly.xml#PutIntegrationMessage"/>
   </connections>
+  <swimlanes x="238" y="98" name="Swimlane">
+    <elements href="assembly.xml#AsyncMediation"/>
+  </swimlanes>
 </wdnm:Diagram>
